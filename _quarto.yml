@@ -1,0 +1,31 @@
+project:
+  type: book
+  output-dir: _site
+  resources:
+    - "fonts/"
+
+website:
+  site-url: "https://noahgula.com/handbook"
+
+book:
+  title: "Liquid Rocket Engine Design"
+  subtitle: "A Handbook for Collegiate Propulsion Teams"
+  chapters:
+    - index.qmd
+    - 01-introduction.qmd
+    - 02-resources.qmd
+    - XX-testing.qmd
+    - XX-glossary.qmd
+
+format:
+  html:
+    theme: plain
+    css: tufte.css
+    reference-location: margin
+    citation-location: margin
+    html-math-method: katex
+    number-sections: false
+    grid:
+      sidebar-width: 240px
+      body-width: 700px
+      margin-width: 320px

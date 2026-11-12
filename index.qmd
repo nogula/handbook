@@ -1,0 +1,17 @@
+---
+toc: false
+---
+
+# Preface
+
+This manual provides practical engineering methods for designing, sizing, and hot-fire testing liquid rocket engines for collegiate teams. It has been prepared by Noah Gula, an alumnus of Ohio State and now a propulsion engineer at Firefly Aerospace.
+
+My goal with this website is to provide a handbook like format to provide guidelines and instructions for the design of liquid rocket engines. I intend this to be a resource for collegiate teams, particularly those that do not have a storied history of liquid propulsion programs, laboratories, and expertise. 
+
+In this handbook, I hope to provide advice to students who want to make something breath fire and not get their student organization shutdown (i.e., to build rocket engine systems safely and responsibly). In a way, I hope to provide a reference manual that I wish existed when I was a student.
+
+It turns out that designing a rocket engine is not that difficult. Although there are no 'secret tricks' to shortcut through the analysis, there are well known and established procedures to go from clean sheet to a released design. The difficulty in this activity, instead, is in organizing a team, building infrastructure, and in the manufacturing and testing of engine systems themselves. At least, that is what takes all the money.
+
+Accordingly, this handbook not only provides recommendations on how to design an engine, but also tips on avoiding common pitfalls and guidelines for turning your drawings into something that will hurt your toe if you drop it.
+
+The 'chapters' listed on the left are ordered in a sensible manner, but you can also use the search bar to find specific information.
