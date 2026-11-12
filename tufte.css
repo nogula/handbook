@@ -1,0 +1,248 @@
+/* ==========================================================================
+   ET Book Font Declarations
+   ========================================================================== */
+
+@font-face {
+	font-family: "et-book";
+	src: url("fonts/et-book-roman-line-figures.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "et-book";
+	src: url("fonts/et-book-display-italic-old-style-figures.woff") format("woff");
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "et-book";
+	src: url("fonts/et-book-bold-line-figures.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "et-book";
+	src: url("fonts/et-book-semi-bold-italic.woff") format("woff");
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
+}
+
+/* ==========================================================================
+   Tufte Layout & Typography
+   ========================================================================== */
+
+body {
+	font-family: "et-book", "Palatino Linotype", "Palatino", "Georgia", serif;
+	font-size: 1.18rem;
+	line-height: 1.6;
+	color: #111111;
+	background-color: #fffff8;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4 {
+	font-family: "et-book", "Palatino Linotype", "Palatino", "Georgia", serif;
+	font-weight: 400;
+	color: #111111;
+}
+
+h1 {
+	font-size: 2.3rem;
+	font-style: normal;
+	border-bottom: 1px solid #dcdcdc;
+	padding-bottom: 0.35rem;
+	margin-top: 3rem;
+	margin-bottom: 1.2rem;
+}
+
+h2 {
+	font-size: 1.65rem;
+	font-style: italic;
+	margin-top: 2.5rem;
+	margin-bottom: 0.8rem;
+}
+
+h3 {
+	font-size: 1.3rem;
+	font-style: italic;
+	margin-top: 2rem;
+	margin-bottom: 0.6rem;
+}
+
+/* Links in body text */
+main a {
+	color: #111111;
+	text-decoration: underline;
+	text-decoration-color: #999999;
+	text-underline-offset: 3px;
+}
+
+main a:hover {
+	text-decoration-color: #111111;
+}
+
+/* ==========================================================================
+   Sidenotes and Margin Content
+   ========================================================================== */
+
+.column-margin,
+aside,
+.margin-caption,
+div.aside,
+.footnote-ref,
+div.hanging-indent,
+.footnotes {
+	font-family: "et-book", "Palatino Linotype", "Palatino", "Georgia", serif;
+	font-size: 0.92rem;
+	line-height: 1.45;
+	color: #333333;
+}
+
+.column-margin .katex {
+	font-size: 0.95em;
+}
+
+/* ==========================================================================
+   Restrained Safety Warnings
+   ========================================================================== */
+
+.callout-warning {
+	border-left: 3px solid #990000 !important;
+	background: transparent !important;
+	border-radius: 0 !important;
+	padding: 0.8rem 1.2rem !important;
+	margin: 2rem 0 !important;
+}
+
+.callout-warning .callout-header {
+	font-family: "et-book", serif;
+	font-weight: 700;
+	color: #990000;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	font-size: 0.88rem;
+	border-bottom: none !important;
+}
+
+.callout-warning .callout-body {
+	font-size: 1.05rem;
+	line-height: 1.55;
+}
+
+/* ==========================================================================
+   Left Sidebar & Navigation Restyling
+   ========================================================================== */
+
+#quarto-sidebar,
+.quarto-sidebar,
+.sidebar {
+	background-color: #fffff8 !important;
+	border-right: 1px solid #ebebdc !important;
+}
+
+/* Understated small-caps title (uncomment display: none below to hide completely) */
+.sidebar-title {
+	font-family: "et-book", serif !important;
+	font-size: 0.95rem !important;
+	font-weight: 400 !important;
+	text-transform: uppercase !important;
+	letter-spacing: 0.08em !important;
+	color: #555555 !important;
+	margin-top: 1rem !important;
+	margin-bottom: 1.2rem !important;
+	/* display: none !important; */
+}
+
+/* Blend search box into cream background */
+#quarto-sidebar .aa-Input,
+#quarto-sidebar .form-control {
+	background-color: #f7f7ee !important;
+	border: 1px solid #e2e2d5 !important;
+	border-radius: 2px !important;
+	font-family: "et-book", serif !important;
+	font-size: 0.9rem !important;
+	color: #333333 !important;
+}
+
+/* Sidebar chapter links */
+.sidebar nav a {
+	font-family: "et-book", serif !important;
+	font-size: 0.95rem !important;
+	line-height: 1.4 !important;
+	color: #444444 !important;
+}
+
+.sidebar nav a:hover {
+	color: #111111 !important;
+	text-decoration: underline !important;
+}
+
+/* Active chapter link */
+.sidebar nav a.active {
+	font-weight: 700 !important;
+	color: #111111 !important;
+}
+
+/* ==========================================================================
+   Right-Side "Table of contents" (TOC) Restyling
+   ========================================================================== */
+
+#quarto-margin-sidebar .toc-title {
+	font-family: "et-book", serif !important;
+	font-style: italic !important;
+	font-weight: 400 !important;
+	font-size: 0.95rem !important;
+	color: #444444 !important;
+}
+
+#quarto-margin-sidebar nav[role="doc-toc"] ul li a {
+	font-family: "et-book", serif !important;
+	font-size: 0.9rem !important;
+	color: #555555 !important;
+}
+
+#quarto-margin-sidebar nav[role="doc-toc"] ul li a.active {
+	color: #111111 !important;
+	border-left: 2px solid #555555 !important;
+	font-weight: 600 !important;
+}
+
+/* ==========================================================================
+   Margin Vertical Alignment Fixes
+   ========================================================================== */
+
+/* Ensure the grid rows track individual block elements */
+.page-columns .column-margin {
+	margin-top: 0 !important;
+	margin-bottom: 1.5rem !important;
+	align-self: start;
+}
+
+/* Eliminate TOC interference if margin content collides with the right rail */
+#quarto-margin-sidebar {
+	display: block !important;
+}
+
+/* Ensure footnote margin items match body text line-height baselines */
+.footnote-ref {
+	vertical-align: super;
+	font-size: 0.75em;
+	line-height: 0;
+}
+
+div.aside,
+aside.column-margin {
+	padding-top: 0.15rem; /* Micro-adjustment to level text baselines */
+}
