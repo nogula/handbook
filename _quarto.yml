@@ -12,10 +12,6 @@ book:
   subtitle: "A Handbook for Collegiate Propulsion Teams"
   chapters:
     - index.qmd
-    - 01-introduction.qmd
-    - 02-resources.qmd
-    - XX-testing.qmd
-    - XX-glossary.qmd
 
 format:
   html:
