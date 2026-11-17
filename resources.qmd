@@ -1,0 +1,98 @@
+# Resources and where to find them {#sec-resources}
+
+There is a good chance that someone has already solved all the problems keeping you up at night, at least with regard to liquid rocket engines. The challenge, therefore, is not trying to invent solutions, but figuring out where those solutions have already been published.
+
+## Textbooks {#sec-textbooks}
+
+There are numerous textbook references for students. You probably own a couple or at least were assigned to read some of these in class. Textbooks are good references and great for understanding the derivation of equations and concepts, but I don't know anyone who has read a textbook and then gone and built a rocket engine. As it turns out, there is a lot of know-how in wrench turning and simply knowing how specific impulse is derived doesn't mean you know how to design a good injector. Despite this, it is crucial to understand the fundamentals, which can realistically only be taught through textbooks.
+
+Some of the most respected or commonly used textbooks are listed below.
+
+### Modern Engineering for Design of Liquid-Propellant Rocket Engines
+
+David H. Huang and Dieter K. Huzel
+
+Colloquially known as "Huzel and Huang", if you could only read one book about liquid rocket engines, make it this one. Over the years, several editions have been published with updated references. The latest was published by AIAA in 1992[^aiaa-edition], but I recommend you just use the NTRS version published in 1971[^second-edition] because it is free and the governing physics of liquid rocket engines hasn't changed since then.
+
+[^aiaa-edition]:[https://arc.aiaa.org/doi/book/10.2514/4.866197](https://arc.aiaa.org/doi/book/10.2514/4.866197)
+
+[^second-edition]:[https://ntrs.nasa.gov/citations/19710019929](https://ntrs.nasa.gov/citations/19710019929)
+
+### Rocket Propulsion Elements
+
+George P. Sutton and Oscar Biblarz
+
+This is text textbook used at Ohio State (or at least was when I was in school). I have heard it described as the "Popular Mechanics" of propulsion textbooks, and I don't think that description is far off.
+
+### Mechanics and Thermodynamics of Propulsion
+
+Philip G. Hill and Carl R. Peterson
+
+This is another decent textbook. It does a better job than RPE explaining thermal-hydraulic and gas dynamics, but spends far too much ink on airbreathing propulsion for my liking.
+
+## Online Repositories {#sec-online}
+
+### NASA Technical Reports Server[^ntrs]
+
+[^ntrs]:[https://ntrs.nasa.gov/](https://ntrs.nasa.gov/)
+
+This is the main online location in which NASA publishes internally-produced work and sometimes contractor reports. There is a ton of information available here, so you have to do a little bit of digging.
+
+### Defense Technical Information Center[^dtic]
+
+[^dtic]:[https://discover.dtic.mil/technical-reports/](https://discover.dtic.mil/technical-reports/)
+
+This is the DoD's equivalent of NTRS. Although much of it is CUI, there are lots of good references, datasets, and designs to learn from.
+
+## NASA Design Monographs
+
+The NASA design monographs are a series of guides for the design of space vehicles. A collection of these monographs was published on the subject of chemical propulsion in the 1970s. Although some of the information is dated, particularly as it relates to materials science and manufacturing, the basic fundamentals still hold. These are references I use frequently in my professional duties.
+
+You can find them online at NTRS.
+
+| Number | Title |
+| - | ---- |
+| SP-8048 | Turbopump Bearings |
+| SP-8052 | Turbopump Inducers |
+| Sp-8080 | Pressure Regulators, Relief Valves, Check Valves, Burst Discs, Explosive Valves |
+| SP-8081 | Liquid Propellant Gas Generators |
+| SP-8087 | Fluid-Cooled Combustion Chambers |
+| SP-8088 | Metal Tanks and Tank Components |
+| SP-8089 | Injectors |
+| SP-8090 | Actuators and Operators |
+| SP-8094 | Valve Components |
+| SP-8097 | Valve Assemblies |
+| SP-8101 | Turbopump Shafts and Couplings |
+| SP-8107 | Turbopump Systems |
+| SP-8109 | Centrifugal Flow Turbopumps |
+| SP-8110 | Turbines |
+| SP-8112 | Pressurization Systems |
+| SP-8113 | Combustion Stabilization Devices |
+| SP-8119 | Disconnects, Couplings, Fittings, Fixed Joints, and Seals |
+| SP-8120 | Nozzles |
+| SP-8121 | Turbopump Rotating-Shaft Seals |
+| SP-8123 | Lines, Bellows, Flexible Hoses, and Filters |
+| SP-8124 | Self-Cooled Combustion Chambers |
+| SP-8125 | Axial Flow Turbopumps |
+
+## Software and analysis tools
+
+There exist a lot of codes and analysis tools for the design of liquid rocket engines. These have been developed over the course of decades by NASA or JANNAF or even private industry. They can be a big help in the initial design of systems, particularly for fluid thermodynamic and transport properties.
+
+### NASA Chemical Equilibrium with Applications (CEA)[^cea]
+
+[^cea]:[https://cearun.grc.nasa.gov/](https://cearun.grc.nasa.gov/)
+
+CEA is a software tool to solve thermodynamic problems. It has been around for quite a while (written in Fortran) and is often used as a reference point or data source for thermodynamic and transport properties of combustion products. There is a good chance you have used it in class.
+
+A word of caution: taken at face value, the results of the 'rocket' problem type are optimistic. The word 'equilibrium' is in the name of the program... Performance values of a real system experience losses from boundary layer performance, chemical kinetics, etc. So, the specific impulse you might find for a given propellant combination at a specified mixture ratio and chamber pressure in CEA could be considered the theoretical maximum.
+
+### NIST REFPROP[^refprop]
+
+[^refprop]:[https://www.nist.gov/srd/refprop](https://www.nist.gov/srd/refprop)
+
+REFPROP is a reference library of thermodynamic and transport properties of fluids. It is a standard tool used by most professional engine designers. Most propellants are built-in, but for certain fluids (particularly hypergols), you will have to provide your own libraries. You probably won't be using hypergols, anyway.
+
+Unfortunately, REFPROP comes with a (literal) price, and so I recommend you consider an alternative called CoolProp[^coolprop] which is developed by Ian Bell, the same person who develops REFPROP.
+
+[^coolprop]:[https://coolprop.org/coolprop/wrappers/Python/index.html](https://coolprop.org/coolprop/wrappers/Python/index.html)
