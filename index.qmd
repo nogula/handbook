@@ -16,9 +16,7 @@ The 'chapters' listed on the left are ordered in a sensible manner, but you can 
 
 It will take me a while to write all my thoughts down and even longer to organize them into a coherent and useful resource. I am just getting started.
 
-Initially, my focus is on the procedural and administrative matters concerning the designing of liquid rocket engines. This covers topics such as organizational structures, management, and administrative procedures, rather than equations and technical best practices. Besides, plenty of [resources](#sec-resources) exist for the technical topics.
-
-The reason for this is simple: you spend much of your undergraduate career learning about topics like the Navier-Stokes equations, but very little in the way of those administrative matters that are important in your professional career. 
+Initially, my focus is on the procedural and administrative matters concerning the designing of liquid rocket engines. This covers topics such as organizational structures, management, and administrative procedures, rather than equations and technical best practices. The reason for this is simple: you spend much of your undergraduate career learning about topics like the Navier-Stokes equations, but very little in the way of those administrative matters that are important in your professional career. Besides, plenty of [resources](#sec-resources) exist for the technical topics. 
 
 ## Contributing
 
