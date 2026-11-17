@@ -12,6 +12,7 @@ book:
   subtitle: "A Handbook for Collegiate Propulsion Teams"
   chapters:
     - index.qmd
+    - resources.qmd
 
 format:
   html:
